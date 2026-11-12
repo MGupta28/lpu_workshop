@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>eci150_ur_bringup</name>
+  <version>0.1.0</version>
+  <description>ECI150 Day 4, Parts 2-3: thin launch wrappers around the upstream UR5e description (RViz) and Gazebo Classic simulation, plus an optional Panda viewer.</description>
+  <maintainer email="jon.doe@example.com">Jon Doe</maintainer>
+  <license>Apache-2.0</license>
+
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>launch_xml</exec_depend>
+  <exec_depend>ament_index_python</exec_depend>
+  <!-- Part 2: UR5e in RViz -->
+  <exec_depend>ur_description</exec_depend>
+  <exec_depend>joint_state_publisher_gui</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+  <exec_depend>xacro</exec_depend>
+  <exec_depend>tf2_tools</exec_depend>
+  <!-- Part 2 optional: Panda in RViz -->
+  <exec_depend>moveit_resources_panda_description</exec_depend>
+  <!-- Part 3: UR5e in Gazebo Classic (ur_simulation_gazebo is built from source) -->
+  <exec_depend>ur_simulation_gazebo</exec_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

@@ -9,7 +9,8 @@ A 2-hour online ROS 2 Humble lab that runs on **The Construct**. Course designer
 
 ```bash
 mkdir -p ~/eci150_ws/src && cd ~/eci150_ws/src
-git clone <COURSE_REPO_URL> eci150_day4_lab
+git clone https://github.com/MGupta28/lpu_workshop.git eci150_day4_lab
+# or, with a GitHub SSH key: git clone git@github.com:MGupta28/lpu_workshop.git eci150_day4_lab
 bash eci150_day4_lab/scripts/setup_workspace.sh
 source ~/eci150_ws/install/setup.bash
 ```

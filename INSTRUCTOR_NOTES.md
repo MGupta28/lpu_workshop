@@ -12,9 +12,11 @@ This lab is a ROS 2 practical. It is not a digital-twin or virtual-commissioning
 
    ```bash
    mkdir -p ~/eci150_ws/src && cd ~/eci150_ws/src
-   git clone <COURSE_REPO_URL> eci150_day4_lab
+   git clone https://github.com/MGupta28/lpu_workshop.git eci150_day4_lab
    bash ~/eci150_ws/src/eci150_day4_lab/scripts/setup_workspace.sh
    ```
+
+   If an SSH key for GitHub is set up in the ROSject, you can clone with `git clone git@github.com:MGupta28/lpu_workshop.git eci150_day4_lab` instead. HTTPS needs no key, so use it by default. The trailing `eci150_day4_lab` keeps the folder name used throughout the guides.
 
    The script:
    - apt-installs the Classic 11 stack and the other lab packages: `gazebo_ros_pkgs`, `gazebo_ros2_control`, `ur_description`, `ur_controllers`, `ur_moveit_config`, MoveIt, the Panda resources, `turtlesim`, `tf2_tools`, and `rqt_tf_tree`.
